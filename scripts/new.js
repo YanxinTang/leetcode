@@ -2,7 +2,7 @@ const path = require('path');
 const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs/promises');
 
-const SRC_DIR = path.resolve(__dirname, '../src');
+const SRC_DIR = path.resolve(__dirname, '../problems');
 
 let name;
 if (argv._.length <= 0) {
@@ -30,7 +30,7 @@ test('', () => {
 });
 `;
 
-async function newQuestion(name) {
+async function newProblems(name) {
   const questionDir = path.join(SRC_DIR, name);
   await fs.mkdir(questionDir)
   await fs.writeFile(path.join(questionDir, 'index.js'), '');
@@ -41,4 +41,4 @@ async function newQuestion(name) {
   return '创建成功';
 }
 
-newQuestion(name).then(console.log, console.error);
+newProblems(name).then(console.log, console.error);
