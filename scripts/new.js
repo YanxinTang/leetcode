@@ -32,12 +32,9 @@ test('', () => {
 
 async function newProblems(name) {
   const questionDir = path.join(SRC_DIR, name);
-  await fs.mkdir(questionDir)
+  await fs.mkdir(questionDir);
   await fs.writeFile(path.join(questionDir, 'index.js'), '');
-  await fs.writeFile(
-    path.join(questionDir, 'index.test.js'),
-    testFileTemplate,
-  );
+  await fs.writeFile(path.join(questionDir, 'index.test.js'), testFileTemplate);
   return '创建成功';
 }
 

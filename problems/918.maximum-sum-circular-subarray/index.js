@@ -2,14 +2,15 @@
  * @param {number[]} nums
  * @return {number}
  */
-const maxSubarraySumCircular = function(nums) {
+const maxSubarraySumCircular = function (nums) {
   if (nums.length === 1) {
     return nums[0];
   }
 
   const sum = nums.reduce((sum, cur) => sum + cur, 0);
 
-  let pre = nums[0], max = pre;
+  let pre = nums[0];
+  let max = pre;
   for (let i = 1; i < nums.length; i++) {
     pre = Math.max(pre + nums[i], nums[i]);
     max = Math.max(pre, max);

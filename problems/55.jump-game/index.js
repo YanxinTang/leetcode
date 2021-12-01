@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-const canJump = function(nums) {
+const canJump = function (nums) {
   let maxIndex = nums.length - 1;
   for (let i = maxIndex - 1; i >= 0; i--) {
     const value = nums[i];

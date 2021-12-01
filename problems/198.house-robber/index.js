@@ -1,10 +1,10 @@
 /**
  * @param {number[]} nums
  * @return {number}
- * 
+ *
  * f(n) = Max(f(n-2) + Vn, f(n-1))
  */
-const rob = function(nums) {
+const rob = function (nums) {
   if (nums.length === 0) {
     return 0;
   }
@@ -13,7 +13,8 @@ const rob = function(nums) {
     return nums[0];
   }
 
-  let a = nums[0], b = Math.max(nums[0], nums[1]);
+  let a = nums[0];
+  let b = Math.max(nums[0], nums[1]);
   for (let i = 2; i < nums.length; i++) {
     const t = b;
     b = Math.max(a + nums[i], b);

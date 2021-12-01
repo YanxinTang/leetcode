@@ -2,12 +2,12 @@
  * @param {number[]} nums
  * @return {number}
  */
-const getMaxLen = function(nums) {
+const getMaxLen = function (nums) {
   // nums[0:i] 中，最后一个乘积为负数的子串长度
   let preNegLen = nums[0] < 0 ? 1 : 0;
   // nums[0:1] 中，最后一个乘积为正数的子串长度
   let prePosLen = nums[0] > 0 ? 1 : 0;
-  
+
   let max = prePosLen;
   for (let i = 1; i < nums.length; i++) {
     const num = nums[i];

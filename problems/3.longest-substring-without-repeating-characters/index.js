@@ -2,19 +2,21 @@
  * @param {string} s
  * @return {number}
  */
-const lengthOfLongestSubstring = function(s) {
+const lengthOfLongestSubstring = function (s) {
   if (s.length === 0) {
     return 0;
   }
 
-  let l = 0, r = 1, max = 1;
-  while(r < s.length) {
+  let l = 0;
+  let r = 1;
+  let max = 1;
+  while (r < s.length) {
     for (let i = l; i < r; i++) {
       if (s[i] === s[r]) {
-        l = i+1;
+        l = i + 1;
       }
     }
-    r++
+    r++;
     max = r - l > max ? r - l : max;
   }
   return max;
