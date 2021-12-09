@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "**/*.{js,json,yaml}": "prettier --write"
   },
   "dependencies": {
     "jest": "^27.3.1",
