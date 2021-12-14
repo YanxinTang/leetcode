@@ -24,6 +24,6 @@ test('918. 环形子数组的最大和', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
   }
 });

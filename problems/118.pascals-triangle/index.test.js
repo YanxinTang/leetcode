@@ -12,6 +12,6 @@ test('118. 杨辉三角', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toEqual(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toEqual(tc.want);
   }
 });

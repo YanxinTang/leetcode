@@ -27,6 +27,6 @@ test('931. 下降路径最小和', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
   }
 });

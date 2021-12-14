@@ -16,6 +16,6 @@ test('122. 买卖股票的最佳时机 II', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
   }
 });

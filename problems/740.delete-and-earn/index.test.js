@@ -20,6 +20,6 @@ test('740. 删除并获得点数', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input)).toBe(tc.want);
+    expect(func(...tc.input)).toBe(tc.want);
   }
 });

@@ -12,6 +12,6 @@ test('714. 买卖股票的最佳时机含手续费', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
   }
 });

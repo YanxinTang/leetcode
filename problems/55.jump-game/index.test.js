@@ -20,6 +20,6 @@ test('55. 跳跃游戏', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
   }
 });

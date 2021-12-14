@@ -16,6 +16,6 @@ test('house-robber-ii', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input)).toBe(tc.want);
+    expect(func(...tc.input)).toBe(tc.want);
   }
 });

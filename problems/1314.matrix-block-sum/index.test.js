@@ -34,6 +34,6 @@ test('1314. 矩阵区域和', () => {
     },
   ];
   for (const tc of cases) {
-    expect(func.apply(this, tc.input), JSON.stringify(tc.input)).toEqual(tc.want);
+    expect(func(...tc.input), JSON.stringify(tc.input)).toEqual(tc.want);
   }
 });
