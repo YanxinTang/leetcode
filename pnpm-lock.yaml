@@ -4,12 +4,12 @@ specifiers:
   '@babel/core': ^7.16.0
   '@babel/preset-env': ^7.16.4
   '@types/jest': ^27.0.3
-  babel-jest: ^27.3.1
+  babel-jest: ^27.4.4
   husky: ^7.0.4
-  jest: ^27.3.1
+  jest: ^27.4.4
   lint-staged: ^12.1.2
   minimist: ^1.2.5
-  prettier: ^2.5.0
+  prettier: ^2.5.1
 
 dependencies:
   jest: 27.4.4
@@ -1829,7 +1829,7 @@ packages:
     engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001286
+      caniuse-lite: 1.0.30001366
       electron-to-chromium: 1.4.15
       escalade: 3.1.1
       node-releases: 2.0.1
@@ -1871,9 +1871,9 @@ packages:
     engines: { node: '>=10' }
     dev: false
 
-  /caniuse-lite/1.0.30001286:
+  /caniuse-lite/1.0.30001366:
     resolution:
-      { integrity: sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ== }
+      { integrity: sha512-yy7XLWCubDobokgzudpkKux8e0UOOnLHE6mlNJBzT3lZJz6s5atSEzjoL+fsCPkI0G8MP5uVdDx1ur/fXEWkZA== }
 
   /chalk/2.4.2:
     resolution:

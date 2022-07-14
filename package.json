@@ -14,16 +14,16 @@
     "**/*.{js,json,yaml}": "prettier --write"
   },
   "dependencies": {
-    "jest": "^27.3.1",
+    "jest": "^27.4.4",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@types/jest": "^27.0.3",
-    "babel-jest": "^27.3.1",
+    "babel-jest": "^27.4.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.1"
   }
 }
