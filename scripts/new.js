@@ -17,16 +17,13 @@ if (argv._.length <= 0) {
 
 const testFileTemplate = `import func from '.';
 
-test('', () => {
-  const cases = [
-    {
-      input: [],
-      want: ''
-    }
-  ];
-  for (const tc of cases) {
-    expect(func(...tc.input), JSON.stringify(tc.input)).toBe(tc.want);
+test.each([
+  {
+    input: [],
+    want: '',
   }
+])('($#)', ({ input, want }) => {
+  expect(func.apply(null, input)).toBe(want);
 });
 `;
 
